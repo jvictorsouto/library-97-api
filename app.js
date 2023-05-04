@@ -6,7 +6,7 @@ const express = require('express')
 const app = express();
 
 // configurações
-
+require('./db');
 // middiewares gerais
 
 // rotas
