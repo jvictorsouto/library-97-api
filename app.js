@@ -12,7 +12,8 @@ require('./configs')(app);
 // middiewares gerais
 
 // rotas
-
+const bookRoutes = require('./routes/book.routes');
+app.use('/books', bookRoutes)
 // gerenciamento de erros
 app.use((req, res) => {
     res.status(404).json('Não encontrado');
