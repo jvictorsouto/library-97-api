@@ -7,6 +7,8 @@ const app = express();
 
 // configurações
 require('./db');
+require('./configs')(app);
+
 // middiewares gerais
 
 // rotas
